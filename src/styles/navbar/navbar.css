@@ -11,8 +11,8 @@
 }
 
 .LogoHeader-circle {
-    width: 150px; /* Adjust size as needed */
-    height: 150px; /* Adjust size as needed */
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
     border-radius: 50%;
     background-color: black;
     display: flex;
@@ -89,7 +89,7 @@
 .Navbar-links {
     list-style: none;
     display: flex;
-    gap: 70px; /* Increased gap to space out the links more */
+    gap: 20px; /* Increased gap to space out the links more */
     position: relative;
     transition: all 0.3s ease;
 }
@@ -97,7 +97,7 @@
 .Navbar-links a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
     padding: 10px 15px; /* Add padding for the box effect */
     position: relative;
@@ -130,7 +130,7 @@
 }
 
 /* Media query for responsiveness */
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1650px) {
     .LogoHeader-circle {
         left: 0; /* Move the logo to the left side */
         transform: translateX(0); /* Remove centering transform */

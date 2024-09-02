@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
 
 .home-content {
     width: 100%;
@@ -22,7 +21,7 @@
     text-align: center; /* Center the text within its container */
     color: white;
     overflow: hidden; /* Ensures text doesn't overflow outside the container */
-    font-family: 'Permanent Marker', cursive; /* Artsy font for title-1 */
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for title-1 and title-2 */
 }
 
 .hero-overlay {
@@ -57,7 +56,7 @@
 
 .title-1 {
     font-size: 8rem; /* Increased font size for more impact */
-    font-weight: 700; /* Bold for emphasis */
+    font-weight: 700; /* Bold Montserrat font */
     margin-bottom: 20px; /* Adjusted spacing between the lines */
     width: auto; /* Auto width to fit the text */
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Stronger shadow for depth */
@@ -65,9 +64,8 @@
 }
 
 .title-2 {
-    font-size: 7rem; /* Large font size but slightly smaller for hierarchy */
-    font-family: 'Montserrat', sans-serif; /* Clean, modern font */
-    font-weight: 400; /* Thinner weight for contrast */
+    font-size: 6.5rem; /* Slightly smaller font size for hierarchy */
+    font-weight: 300; /* Thinner weight for more contrast with title-1 */
     margin-bottom: 0px; /* No margin between the lines */
     width: auto; /* Auto width to fit the text */
     animation-delay: 0.5s; /* Delay the start of the bottom text animation */
@@ -90,7 +88,7 @@
     background: #662f8f;
     transform: translateY(-50%) rotate(-3deg); /* Slight diagonal angle */
     transform-origin: left;
-    animation: horizontal-cut 3s ease-out 3s infinite; /* Slower and delayed animation */
+    animation: horizontal-cut 2s ease-out 2s infinite; /* Shorter delay and faster animation */
 }
 
 @keyframes horizontal-cut {

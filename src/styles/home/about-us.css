@@ -1,0 +1,109 @@
+/* about-us.css */
+
+/* about-us.css */
+
+/* Initial state for all elements in the about-us-content */
+.about-us-content * {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When the elements are in view, they will fade in */
+.about-us-content.in-view * {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about-us-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #111; /* dark background */
+    color: #fff; /* white text */
+}
+
+.text-content {
+    max-width: 50%; /* Limit width of text section */
+}
+
+.title-div {
+    margin-bottom: 30px;
+}
+
+.line-icon img {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.title-main h1 {
+    font-size: 4rem; /* Larger font size */
+    margin: 0;
+    color: #fff;
+}
+
+.title-subtext h4 {
+    font-size: 1.8rem; /* Increase font size */
+    line-height: 1.8;
+    color: #b0b0b0; /* lighter text color */
+    margin-top: 10px;
+}
+
+.quality-experience-wrapper {
+    margin-top: 30px;
+}
+
+.quality-div,
+.experience-div {
+    display: flex;
+    align-items: flex-start; /* Align the icon and text to the top */
+    margin-bottom: 30px;
+}
+
+.lightbulb-icon img,
+.paintbrush-icon img {
+    width: 100px; /* Larger icon size */
+    margin-right: 20px; /* Space between the icon and text */
+}
+
+.quality-text,
+.experience-text {
+    max-width: 100%;
+}
+
+.quality-text h1,
+.experience-text h1 {
+    font-size: 2.5rem; /* Smaller font size to fit better beside large icon */
+    margin: 0;
+    color: #fff;
+}
+
+.quality-text h4,
+.experience-text h4 {
+    font-size: 1.8rem; /* Increase font size */
+    line-height: 1.6;
+    color: #b0b0b0; /* lighter text color */
+    margin: 10px 0 0 0;
+}
+
+.img-div {
+    max-width: 45%; /* Image container width */
+}
+
+.team-photo-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Additional global styles */
+h1 {
+    font-family: 'Montserrat', sans-serif; /* matching font */
+    font-weight: bold;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif; /* matching font */
+    color: #b0b0b0;
+}

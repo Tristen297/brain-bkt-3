@@ -1,0 +1,89 @@
+.collage-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(45deg, #663399, #00ff80, #ff00ff, #00ffff);
+    background-size: 600% 600%;
+    animation: psychedelicAnimation 10s ease infinite;
+    background-blend-mode: overlay;
+    background-color: #1a1a1a; /* Almost black background */
+}
+
+@keyframes psychedelicAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 100%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 0%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.photo-line-1, .photo-line-2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 5vw;
+    width: 80%;
+    margin: 100px auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.photo-container {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    background-color: #fff; /* White background behind images */
+}
+
+.photo-container:hover {
+    transform: scale(1.1) rotate(5deg); /* Slightly rotates and zooms in */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* Enhances shadow on hover */
+}
+
+.photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.photo-container:hover img {
+    transform: scale(1.3); /* Image zooms in more than the container */
+}
+
+/* Text Styling */
+.text-line {
+    text-align: center;
+    margin: 0px 0;
+}
+
+.text-line h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff; /* White text for high contrast */
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ff80; /* Adds a neon glow effect */
+    animation: textGlow 2s infinite alternate; /* Pulsing glow animation */
+}
+
+@keyframes textGlow {
+    0% {
+        text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ff80;
+    }
+    100% {
+        text-shadow: 0 0 20px #ff00ff, 0 0 40px #00ff80;
+    }
+}
