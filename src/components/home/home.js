@@ -1,5 +1,4 @@
 import Hero from "../home/hero";
-import AboutUs from "./about-us";
 import Collage from "./collage";
 import CtaBar from "./cta-bar";
 
